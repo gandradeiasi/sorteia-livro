@@ -9,10 +9,17 @@
 
 <body>
     <div>
+        <div id="conteudo">
 
+        </div>
+        <button onclick="render()" style="font-size: 24px; margin-top: 1rem;">Sortear</button>
     </div>
     <script>
-        document.querySelector('div').innerText = sorteiaColunaLivro();
+        render();
+
+        function render() {
+            document.querySelector('#conteudo').innerText = sorteiaColunaLivro();
+        }
 
         function sorteiaColunaLivro() {
             var livro_data = [
